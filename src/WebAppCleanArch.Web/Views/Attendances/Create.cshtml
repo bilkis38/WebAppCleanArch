@@ -1,4 +1,4 @@
-@model WebAppCleanArch.Application.DTOs.Attendance
+@model WebAppCleanArch.Domain.Entities.Attendance
 @{
     ViewData["Title"] = "Add New Attendance";
 }
@@ -20,9 +20,9 @@
             </div>
 
             <div class="form-group mb-3">
-                <label asp-for="Date" class="form-label">Date & Time</label>
-                <input asp-for="Date" class="form-control" type="datetime-local" />
-                <span asp-validation-for="Date" class="text-danger"></span>
+                <label asp-for="AttendanceDate" class="form-label">Date & Time</label>
+                <input asp-for="AttendanceDate" class="form-control" type="datetime-local" />
+                <span asp-validation-for="AttendanceDate" class="text-danger"></span>
             </div>
 
             <div class="form-group mb-3">
@@ -34,9 +34,9 @@
             </div>
 
             <div class="form-group mb-3">
-                <label asp-for="Note" class="form-label">Note</label>
-                <textarea asp-for="Note" class="form-control" rows="3" placeholder="Note (optional)"></textarea>
-                <span asp-validation-for="Note" class="text-danger"></span>
+                <label asp-for="Notes" class="form-label">Note</label>
+                <textarea asp-for="Notes" class="form-control" rows="3" placeholder="Note (optional)"></textarea>
+                <span asp-validation-for="Notes" class="text-danger"></span>
             </div>
 
             <div class="form-group">

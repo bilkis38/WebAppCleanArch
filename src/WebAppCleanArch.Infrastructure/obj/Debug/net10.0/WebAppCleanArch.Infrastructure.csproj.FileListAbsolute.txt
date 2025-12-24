@@ -57,6 +57,7 @@ C:\Users\ASUS\Documents\SoftwareEnginer\WebAppCleanArch\src\WebAppCleanArch.Infr
 C:\Users\ASUS\Documents\SoftwareEnginer\WebAppCleanArch\src\WebAppCleanArch.Infrastructure\obj\Debug\net10.0\WebAppCleanArch.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\ASUS\Documents\SoftwareEnginer\WebAppCleanArch\src\WebAppCleanArch.Infrastructure\obj\Debug\net10.0\WebAppCleanArch.Infrastructure.AssemblyInfo.cs
 C:\Users\ASUS\Documents\SoftwareEnginer\WebAppCleanArch\src\WebAppCleanArch.Infrastructure\obj\Debug\net10.0\WebAppCleanArch.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\SoftwareEnginer\WebAppCleanArch\src\WebAppCleanArch.Infrastructure\obj\Debug\net10.0\WebAppCleanArch.Infrastructure.sourcelink.json
 C:\Users\ASUS\Documents\SoftwareEnginer\WebAppCleanArch\src\WebAppCleanArch.Infrastructure\obj\Debug\net10.0\WebAppCl.FAA08F3F.Up2Date
 C:\Users\ASUS\Documents\SoftwareEnginer\WebAppCleanArch\src\WebAppCleanArch.Infrastructure\obj\Debug\net10.0\WebAppCleanArch.Infrastructure.dll
 C:\Users\ASUS\Documents\SoftwareEnginer\WebAppCleanArch\src\WebAppCleanArch.Infrastructure\obj\Debug\net10.0\refint\WebAppCleanArch.Infrastructure.dll

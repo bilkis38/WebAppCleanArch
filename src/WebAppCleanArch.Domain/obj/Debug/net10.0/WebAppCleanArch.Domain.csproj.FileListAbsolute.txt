@@ -5,6 +5,7 @@ C:\Users\ASUS\Documents\SoftwareEnginer\WebAppCleanArch\src\WebAppCleanArch.Doma
 C:\Users\ASUS\Documents\SoftwareEnginer\WebAppCleanArch\src\WebAppCleanArch.Domain\obj\Debug\net10.0\WebAppCleanArch.Domain.AssemblyInfoInputs.cache
 C:\Users\ASUS\Documents\SoftwareEnginer\WebAppCleanArch\src\WebAppCleanArch.Domain\obj\Debug\net10.0\WebAppCleanArch.Domain.AssemblyInfo.cs
 C:\Users\ASUS\Documents\SoftwareEnginer\WebAppCleanArch\src\WebAppCleanArch.Domain\obj\Debug\net10.0\WebAppCleanArch.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\SoftwareEnginer\WebAppCleanArch\src\WebAppCleanArch.Domain\obj\Debug\net10.0\WebAppCleanArch.Domain.sourcelink.json
 C:\Users\ASUS\Documents\SoftwareEnginer\WebAppCleanArch\src\WebAppCleanArch.Domain\obj\Debug\net10.0\WebAppCleanArch.Domain.dll
 C:\Users\ASUS\Documents\SoftwareEnginer\WebAppCleanArch\src\WebAppCleanArch.Domain\obj\Debug\net10.0\refint\WebAppCleanArch.Domain.dll
 C:\Users\ASUS\Documents\SoftwareEnginer\WebAppCleanArch\src\WebAppCleanArch.Domain\obj\Debug\net10.0\WebAppCleanArch.Domain.pdb

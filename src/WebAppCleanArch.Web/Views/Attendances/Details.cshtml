@@ -1,4 +1,5 @@
-@model WebAppCleanArch.Application.DTOs.Attendance
+@model WebAppCleanArch.Domain.Entities.Attendance
+
 @{
     ViewData["Title"] = "Attendance Details";
 }
@@ -14,10 +15,10 @@
             
             <dt class="col-sm-4">Email</dt>
             <dd class="col-sm-8">@Model.Student?.Email</dd>
-            
-            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Date)</dt>
-            <dd class="col-sm-8">@Model.Date.ToString("dddd, dd MMMM yyyy")</dd>
-            
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.AttendanceDate)</dt>
+            <dd class="col-sm-8">@Model.AttendanceDate.ToString("dddd, dd MMMM yyyy")</dd>
+
             <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Status)</dt>
             <dd class="col-sm-8">
                 @if (Model.Status == "Present")
@@ -37,9 +38,9 @@
                     <span class="badge bg-danger">@Model.Status</span>
                 }
             </dd>
-            
-            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Note)</dt>
-            <dd class="col-sm-8">@(string.IsNullOrEmpty(Model.Note) ? "-" : Model.Note)</dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Notes)</dt>
+            <dd class="col-sm-8">@(string.IsNullOrEmpty(Model.Notes) ? "-" : Model.Notes)</dd>
         </dl>
         
         <div class="mt-3">

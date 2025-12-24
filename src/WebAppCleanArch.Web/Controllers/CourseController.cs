@@ -28,7 +28,7 @@ namespace WebAppCleanArch.Web.Controllers
                 return NotFound();
             }
 
-            var course = await _courseService.GetCourseWithEnrollmentsAsync(id.Value);
+            var course = await _courseService.GetCourseByIdAsync(id.Value);
             if (course == null)
             {
                 return NotFound();

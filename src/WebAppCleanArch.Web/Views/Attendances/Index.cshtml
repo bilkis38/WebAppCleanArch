@@ -1,4 +1,4 @@
-@model IEnumerable<WebAppCleanArch.Application.DTOs.Attendance>
+@model IEnumerable<WebAppCleanArch.Domain.Entities.Attendance>
 @{
     ViewData["Title"] = "Attendance List";
 }
@@ -25,8 +25,8 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>@item.Date.ToString("dd/MM/yyyy")</td> <!-- ← DATE ONLY -->
-                <td>@item.Date.ToString("HH:mm")</td> <!-- ← TIME ONLY -->
+                <td>@item.AttendanceDate.ToString("dd/MM/yyyy")</td> <!-- ← DATE ONLY -->
+                <td>@item.AttendanceDate.ToString("HH:mm")</td> <!-- ← TIME ONLY -->
                 <td>@item.Student?.Name</td>
                 <td>@item.Student?.Email</td>
                 <td>
@@ -47,7 +47,7 @@
                         <span class="badge bg-info">Permission</span>
                     }
                 </td>
-                <td>@item.Note</td>
+                <td>@item.Notes</td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Edit</a>
                     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Details</a>

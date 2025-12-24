@@ -1,9 +1,10 @@
+using WebAppCleanArch.Application.Interfaces;
 using WebAppCleanArch.Domain.Entities;
 using WebAppCleanArch.Domain.Interfaces;
 
 namespace WebAppCleanArch.Application.Services
 {
-    public class CourseService
+    public class CourseService : ICourseService
     {
         private readonly ICourseRepository _courseRepository;
 
@@ -17,29 +18,48 @@ namespace WebAppCleanArch.Application.Services
             return await _courseRepository.GetAllAsync();
         }
 
-        public async Task<Course?> GetCourseByIdAsync(int id)
+        public async Task<Course> GetCourseByIdAsync(int id)
         {
             return await _courseRepository.GetByIdAsync(id);
         }
 
-        public async Task<Course> CreateCourseAsync(Course course)
+        public async Task<bool> CreateCourseAsync(Course course)
         {
-            return await _courseRepository.AddAsync(course);
+            try
+            {
+                await _courseRepository.AddAsync(course);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
-        public async Task UpdateCourseAsync(Course course)
+        public async Task<bool> UpdateCourseAsync(Course course)
         {
-            await _courseRepository.UpdateAsync(course);
+            try
+            {
+                await _courseRepository.UpdateAsync(course);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
-        public async Task DeleteCourseAsync(int id)
+        public async Task<bool> DeleteCourseAsync(int id)
         {
-            await _courseRepository.DeleteAsync(id);
-        }
-
-        public async Task<bool> CourseExistsAsync(int id)
-        {
-            return await _courseRepository.ExistsAsync(id);
+            try
+            {
+                await _courseRepository.DeleteAsync(id);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

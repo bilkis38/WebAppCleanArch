@@ -48,7 +48,7 @@ namespace WebAppCleanArch.Web.Controllers
         // GET: Enrollment/Create
         public async Task<IActionResult> Create(int? courseId)
         {
-            await PopulateDropdowns(courseId: courseId);
+            await PopulateDropdowns(selectedCourseId: courseId);
 
             if (courseId.HasValue)
             {

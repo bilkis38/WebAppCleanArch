@@ -49,20 +49,7 @@ builder.Services.AddCors(options =>
 });
 
 // Swagger Configuration
-builder.Services.AddSwaggerGen(options =>
-{
-    var provider = builder.Services.BuildServiceProvider()
-        .GetRequiredService<IApiVersionDescriptionProvider>();
-
-    foreach (var description in provider.ApiVersionDescriptions)
-    {
-        options.SwaggerDoc(description.GroupName, new()
-        {
-            Title = $"WebAppCleanArch API {description.ApiVersion}",
-            Version = description.ApiVersion.ToString()
-        });
-    }
-});
+builder.Services.AddSwaggerGen();
 
 // REGISTER REPOSITORIES (Infrastructure Layer)
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
@@ -93,17 +80,7 @@ if (!app.Environment.IsDevelopment())
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(options =>
-    {
-        var provider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
-        
-        foreach (var description in provider.ApiVersionDescriptions)
-        {
-            options.SwaggerEndpoint(
-                $"/swagger/{description.GroupName}/swagger.json",
-                $"WebAppCleanArch API {description.GroupName.ToUpperInvariant()}");
-        }
-    });
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
