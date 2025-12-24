@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "WebAppCleanArch.Application/1.0.0": {
+        "dependencies": {
+          "WebAppCleanArch.Domain": "1.0.0"
+        },
+        "runtime": {
+          "WebAppCleanArch.Application.dll": {}
+        }
+      },
+      "WebAppCleanArch.Domain/1.0.0": {
+        "runtime": {
+          "WebAppCleanArch.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebAppCleanArch.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebAppCleanArch.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
